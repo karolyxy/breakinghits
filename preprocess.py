@@ -28,7 +28,7 @@ def insta_comment(file):
 
     # Create a list of usernames
     
-    return pd.DataFrame(dict(pd.read_json(file)['comments'][0])['data'])
+    return df
 
 
 
