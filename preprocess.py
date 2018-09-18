@@ -116,6 +116,7 @@ def insta_open(file):
     IG_full = comments_df.join(df, on='post_id')
     IG_full.drop('comments_text', axis=1, inplace=True)
     IG_full.drop('count', axis=1, inplace=True)
+    IG_full = IG_full.reset_index(drop=True)
 
     return IG_full
 
